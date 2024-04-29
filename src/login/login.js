@@ -10,10 +10,8 @@ const authorizeUser = () => {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-
     const loginButton = document.getElementById("login-to-spotify");
     loginButton.addEventListener("click", authorizeUser);
-
 })
 
 window.setItemsInLocalStorage = ({ accessToken, tokenType, expiresIn }) => {
